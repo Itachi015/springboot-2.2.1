@@ -1,0 +1,16 @@
+eureka:
+  instance: server1
+  client:
+    service-url:
+      defaultZone: http://server1:9001/eureka
+server:
+  port: 20000
+
+spring:
+  application:
+    name: invoice-service
+  http:
+    converters:
+      preferred-json-mapper: jackson
+  jackson:
+    time-zone: Asia/Shanghai
